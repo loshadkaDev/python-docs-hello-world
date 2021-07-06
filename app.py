@@ -5,4 +5,4 @@ app = Flask(__name__)
 
 @app.route("/")
 def hello():
-    return os.getenv('hello')
+    return os.environ('hello')
