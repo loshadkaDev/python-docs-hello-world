@@ -7,5 +7,5 @@ app = Flask(__name__)
 @app.route("/")
 def hello():
     logging.info('Python web app test')
-    print('see if this prints')
+    print(os.environ['hello'])
     return os.environ['hello']
